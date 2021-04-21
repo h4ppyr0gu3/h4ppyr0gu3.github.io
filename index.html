@@ -15,362 +15,191 @@
 
 <body>
 
-  <nav class="navbar is-link is-fixed-top">
-    <div class="navbar-brand">
-      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-
-    <div id="navbarExampleTransparentExample" class="navbar-menu">
-      <div class="navbar-end">
-        <a class="navbar-item" href="mailto: dr.01@aol.com">
-          <span class="icon">
-            <i class="fas fa-info"></i>
-          </span>
-          <span>Contact via email</span>
-        </a>
-        <a class="navbar-item" href="#services">
-          <span class="icon">
-            <i class="fas fa-bars"></i>
-          </span>
-          <span>Services</span>
-        </a>
-        <a class="navbar-item" href="#resume">
-          <span class="icon">
-            <i class="fas fa-file-alt"></i>
-          </span>
-          <span>Resume</span>
-        </a>
-        <a class="navbar-item" href="#portfolio">
-          <span class="icon">
-            <i class="fas fa-th-list"></i>
-          </span>
-          <span>Portfolio</span>
-        </a>
-        <a class="navbar-item" href="#contact">
-          <span class="icon">
-            <i class="fas fa-envelope"></i>
-          </span>
-          <span>Contact</span>
-        </a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <section class="hero is-fullheight ">
-    <div class="hero-body">
-      <div class="container">Hello! I am
-        <h1 class="title is-1">
-          David Rogers
-        </h1>
-        <h2 class="subtitle is-3">
-          Full Stack Web Developer
-        </h2>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section class="section" id="about">
-    <!-- Title -->
-    <div class="section-heading">
-      <h3 class="title is-2">About Me</h3>
-      <h4 class="subtitle is-5">Jack of all trades, master of "some"</h4>
-      <div class="container">
-      	<a href="Untitled document.pdf" download> download link </a> 
-        <p>Web developer with more than <strong>4 years</strong> of well-rounded experience with a degree in the
-          field of
-          <strong>Computer Science</strong>, extensive knowledge of modern Web techniques and love for <strong>Coffee</strong>.
-          Looking for an opportunity to work and upgrade, as well as being involved in an organization that
-          believes
-          in gaining a competitive edge and giving back to the community.</p>
-      </div>
-    </div>
-
-    <div class="columns has-same-height is-gapless">
-      <div class="column">
-        <!-- Profile -->
-        <div class="card">
-          <div class="card-content">
-            <h3 class="title is-4">Profile</h3>
-
-            <div class="content">
-              <table class="table-profile">
-                <tr>
-                  <th colspan="1"></th>
-                  <th colspan="2"></th>
-                </tr>
-                <tr>
-                  <td>Address:</td>
-                  <td>Warsaw Poland</td>
-                </tr>
-                <tr>
-                  <td>Phone:</td>
-                  <td>+48 516809024</td>
-                </tr>
-                <tr>
-                  <td>Email:</td>
-                  <td>dr.01@aol.com</td>
-                </tr>
-              </table>
+ <div class="has-background-light" >
+        <div class="container ">
+          <!-- <nav class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item is-size-4" onClick={this.handleHome}>
+                Home
+              </a>
             </div>
-            <br>
-            <div class="buttons has-addons is-centered">
-              <a href="https://github.com/h4ppyr0gu3" class="button is-link">Github </a>
-              <a href="https://www.linkedin.com/in/david-rogers-a648b315b/" class="button is-link">LinkedIn</a>
+            <div class="navbar-end">
+              <a class="navbar-item is-size-4" onClick={this.handleBlogs}>
+                Blog Posts
+              </a>
             </div>
+          </nav> -->
+              <hr class="has-background-grey-light" />
+
+          <div class="columns m-5">
+            <div class="column">
+              <div class="columns">
+        <div class="column">
+            <div class="columns">
+            <div class="column is-2 ">
+            <img src="profile.jpg"/>
+            </div>
+            <div class="column">
+            <div class="columns">
+            <div class="column is-size-2">
+            David Rogers
+
+            </div>
+            </div>
+            <div class="columns">
+            <div class="column is-size-4">
+            Web developer | Ruby on Rails
+
+            </div>
+            </div>
+            </div>  
           </div>
         </div>
       </div>
-      <div class="column">
-        <!-- Profile picture -->
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="https://source.unsplash.com/random/1280x960" alt="Placeholder image">
-            </figure>
-          </div>
-        </div>
-      </div>
-      <div class="column">
-        <!-- Skills -->
-        <div class="card">
-          <div class="card-content skills-content">
-            <h3 class="title is-4">Skills</h3>
-            <div class="content">
-
-              <article class="media">
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>C:</strong>
-                      <br>
-                      <progress class="progress is-primary" value="60" max="100"></progress>
-                    </p>
-                  </div>
-                </div>
-              </article>
-
-              <article class="media">
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>Ruby on Rails:</strong>
-                      <br>
-                      <progress class="progress is-primary" value="40" max="100"></progress>
-                    </p>
-                  </div>
-                </div>
-              </article>
-
-              <article class="media">
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>HTML5/CSS3</strong>
-                      <br>
-                      <progress class="progress is-primary" value="95" max="100"></progress>
-                    </p>
-                  </div>
-                </div>
-              </article>
-
-              <article class="media">
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>Databases</strong>
-                      <br>
-                      <progress class="progress is-primary" value="40" max="100"></progress>
-                    </p>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="services">
-    <div class="section-heading">
-      <h3 class="title is-2">Services</h3>
-      <h4 class="subtitle is-5">What can I do for you?</h4>
-    </div>
-    <div class="container">
       <div class="columns">
         <div class="column">
-          <div class="box">
-            <div class="content">
-              <h4 class="title is-5">Front End Web Development</h4>
-              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript 
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="box">
-            <div class="content">
-              <h4 class="title is-5">Back End Web Development</h4>
-              Develop Back End application/service using Ruby on Rails with PostgreSQL or SQLite DB running on linux servers.
-            </div>
-          </div>
-        </div>
-      </div>
+            <div class="columns">
+              <div class="column is-3 is-size-3 mx-2">
+                Education
+                </div>
+                <div class="column">
+                  <ul>
+                    <li>Peterhouse Boys School 2014 - 2019</li>
+                  </ul>
+                </div>
+              </div>
+              <hr class="has-background-grey-light" />
 
-  <!-- Resume -->
-  <section class="section" id="resume">
-    <div class="section-heading">
-      <h3 class="title is-2">Resume</h3>
-      <h4 class="subtitle is-5">More about my past</h4>
-      <a href="#" class="button is-link is-medium">
-        <span class="icon">
-          <i class="fas fa-file-alt"></i>
-        </span>
-        <span>Download My Resume</span>
-      </a>
+              <div class="columns">
+              <div class="column is-3 is-size-3 mx-2">
+                Work Experience
+                </div>
+                <div class="column">
+                  <ul>
+                    <li>Personal projects</li>
+                    <li>I'm working on it</li>
+                  </ul>
+                </div>
+              </div>
+              <hr class="has-background-grey-light" />
+              <div class="columns">
+              <div class="column is-3 is-size-3 mx-2">
+                Personal Projects
+                </div>
+                <div class="column">
+                  <ul>
+                    <li>
+                    <div class="columns">
+                      <div class="column is-size-4 ">
+                        <a href="https://songlink.wtf" class="has-text-black-bis">MusicApp</a>
+                      </div>
+                    </div>
+                    <div class="columns">
+                      <div class="column px-5">
+                        This app uses the youtube API to get search results of youtube videos,<br/>
+                        It then gives the user the opportunity to watch the youtube video in an iframe and download the video 
+                        which uses backround workers to download asynchronously and clean the title as best as it possibly can 
+                        it scrapes wikipedia to find artists and their respective genres, it then allows the user to confirm the artists
+                        and title as it isn't a perfect system, if the user is logged in it is added to the users tracks
+                        there are future improvements i'd like to work on listed in the <a href="https://github.com/h4ppyr0gu3/musicApp"
+                        class="has-text-black-bis">
+                        github repository</a><br/><br/>
+                        this app uses the following technologies
+                        <ul className="bullet-points pl-5">
+                          <li>Ruby on Rails - Backend</li>
+                          <li>Javascript, CSS, SASS, HTML, Slim, React - Frontend</li>
+                          <li>Git and Github - Version control</li>
+                          <li>SQL, namely PostgreSQL - Database</li>
+                          <li>AJAX - API communication with React frontend and youtube API</li>
+                          <li>Passenger and NGINX on a Linode server - Deployment</li>
+                        </ul> 
+                      </div>
+                    </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <hr class="has-background-grey-light" />
+
+              <div class="columns">
+              <div class="column is-3 is-size-3 mx-2">
+                Languages
+                </div>
+                <div class="column">
+                  <ul>
+                    <li>English(native)</li>
+                    <li>Currently learning Polish</li>
+                  </ul>
+                </div>
+              </div>
+              <hr class="has-background-grey-light" />
+
+              <div class="columns">
+              <div class="column is-3 is-size-3 mx-2">
+                Skills
+                </div>
+                <div class="column">
+                <strong>Languages, Technologies and Frameworks</strong>
+                  <ul className="bullet-points pl-5">
+                    <li>Ruby on Rails</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Ruby</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                    <li>React</li>
+                    <li>SQL/PostgreSQL</li>
+                    <li>AJAX</li>
+                    <li>BASH</li>
+                    <li>Passenger</li>
+                    <li>NGINX</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          </div>
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+              <hr class="has-background-grey-light" />
+
+        <footer >
+  <div class="columns has-text-centered">
+  <div class="column is-size-4">
+    Contact 
     </div>
-  </section>
-
-  <!-- Portfolio -->
-  <section class="section" id="portfolio">
-    <div class="container">
-      <div class="section-heading">
-        <h3 class="title is-2">Portfolio</h3>
-        <h4 class="subtitle is-5">My latest works</h4>
-      </div>
-      <br>
-
-            <!-- blog -->
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span>Blog</span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-danger">WIP</span>
-                  </span>
-                </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="../images/blog.png" alt="Blog template screenshot">
-                </figure>
-              </div>
-              <footer class="card-footer">
-                <a href="templates/blog.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/blog.html" class="card-footer-item">Source
-                  Code</a>
-              </footer>
-            </div>
-          
-
-  <!-- Achievement Level -->
-  <section class="section">
-    <nav class="level">
-      <div class="level-item has-text-centered">
-        <div>
-          <p class="heading">Tweets</p>
-          <p class="title">3,456</p>
-        </div>
-      </div>
-      <div class="level-item has-text-centered">
-        <div>
-          <p class="heading">Following</p>
-          <p class="title">123</p>
-        </div>
-      </div>
-      <div class="level-item has-text-centered">
-        <div>
-          <p class="heading">Followers</p>
-          <p class="title">456K</p>
-        </div>
-      </div>
-      <div class="level-item has-text-centered">
-        <div>
-          <p class="heading">Likes</p>
-          <p class="title">789</p>
-        </div>
-      </div>
-    </nav>
-  </section>
-
-
-  <!-- Contact -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="section-heading">
-        <h3 class="title is-2">Contact</h3>
-        <h4 class="subtitle is-5">Get in touch</h4>
-      </div>
-      <br>
-
-      <div class="columns">
-        <div class="column is-6 is-offset-3">
-          <div class="box">
-            <div class="field">
-              <label class="label">Name</label>
-              <div class="control">
-                <input class="input" type="text" placeholder="Text input">
-              </div>
-            </div>
-
-            <div class="field">
-              <label class="label">Email</label>
-              <div class="control has-icons-left">
-                <input class="input" type="email" placeholder="Email input" value="">
-                <span class="icon is-small is-left">
-                  <i class="fas fa-envelope"></i>
-                </span>
-              </div>
-            </div>
-
-            <div class="field">
-              <label class="label">Message</label>
-              <div class="control">
-                <textarea class="textarea" placeholder="Textarea"></textarea>
-              </div>
-            </div>
-
-            <div class="field is-grouped has-text-centered">
-              <div class="control">
-                <button class="button is-link is-large"><span class="icon">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                  <span>Submit</span></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </section>
+  <div class="columns" >
+    <div class="column mx-5 has-text-centered">
+    <a href="tel: +48516809024" class="has-text-black-bis">
+      +48 516809024
+    </a>
+    </div>
+    <div class="column mx-5 has-text-centered">
+      rogersdpdr@gmail.com<br/>dr.01@aol.com
+    </div>
+    <div class="column mx-5 has-text-centered">
+      Ludwika Warynskiego 12A, Warsaw, PL
+    </div>
+  </div>
 
-  <!-- Footer -->
-  <footer class="container">
     <div class="columns">
-    	<div class="column is-2">
-    		<img src="github.svg" href="https://github.com/h4ppyr0gu3">
-    	</div>
-    	<div class="column is-2">
-    		<img src="linkedin.svg" href="https://www.linkedin.com/in/david-rogers-a648b315b/">
-    	</div>
-    	<div class="column is-2">
-    		
-    		<img src="instagram.svg" href="https://www.instagram.com/rogers_dp/">
-    	</div>
+    <div class="column has-text-centered pb-5">
+      <a href="http://github.com/h4ppyr0gu3" class="mx-2"><img class="icon" src="git.svg"/> </a> 
+      <a href="https://www.linkedin.com/in/david-rogers-a648b315b/" class="mx-2"> <img class="icon" src="link.svg"/> </a>
     </div>
-    <div>Icons made by <a href="https://www.freepik.com" title="Freepik" class="is-centered">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+</footer>
+      </div>
+        </div>
+    </body>
 
-  </footer>
-</body>
-
-</html>
+    </html>
