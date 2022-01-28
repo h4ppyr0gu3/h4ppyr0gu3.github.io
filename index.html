@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>David Rogers</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="./custom.css">
 </head>
 
 <body>
@@ -45,7 +46,7 @@
               <div class="column">
                 <ul>
                   <li style="padding-bottom: 1rem;">
-                    <div class="columns">
+                    <div class="columns" id="high-school-toggle" style="border: solid, #333, 2px">
                       <div class="column is-size-4 ">
                         <a href="https://www.peterhouse.co.zw/" class="has-text-black-bis">Peterhouse Boys School</a>
                       </div>
@@ -53,102 +54,10 @@
                         <a class="has-text-grey-light">01/2014 -> 11/2019</a>
                       </div>
                     </div>
-                    <div class="px-5">
-                      <p class="is-size-5" style="padding-bottom: 1rem;">IGCSE levels</p>
-                      <table>
-                        <tr>
-                          <th style="padding-right: 8rem;">Subject</th>
-                          <th>Grade</th>
-                        </tr>
-                        <tr>
-                          <td>Mathematics</td>
-                          <td>A*</td>
-                        </tr>
-                        <tr>
-                          <td>Physics</td>
-                          <td>A*</td>
-                        </tr>
-                        <tr>
-                          <td>Chemistry</td>
-                          <td>A</td>
-                        </tr>
-                        <tr>
-                          <td>Biology</td>
-                          <td>A</td>
-                        </tr>
-                        <tr>
-                          <td>Geography</td>
-                          <td>A</td>
-                        </tr>
-                        <tr>
-                          <td>Design & Technology</td>
-                          <td>A*</td>
-                        </tr>
-                        <tr>
-                          <td>English Language</td>
-                          <td>A</td>
-                        </tr>
-                        <tr>
-                          <td>English Literature</td>
-                          <td>A</td>
-                        </tr>
-                        <tr>
-                          <td>French</td>
-                          <td>A</td>
-                        </tr>
-                      </table>
-                    </div>
-
-                    <div class="pt-5 px-5">
-                      <p class="is-size-5" style="padding-bottom: 1rem;">AS levels</p>
-                      <table>
-                        <tr>
-                          <th style="padding-right: 8rem;">Subject</th>
-                          <th>Grade</th>
-                        </tr>
-                        <tr>
-                          <td>Mathematics</td>
-                          <td>A</td>
-                        </tr>
-                        <tr>
-                          <td>Physics</td>
-                          <td>A</td>
-                        </tr>
-                        <tr>
-                          <td>Chemistry</td>
-                          <td>A</td>
-                        </tr>
-                        <tr>
-                          <td>English Language</td>
-                          <td>E</td>
-                        </tr>
-                      </table>
-                    </div>
-
-                    <div class="pt-5 px-5">
-                      <p class="is-size-5" style="padding-bottom: 1rem;">A levels</p>
-                      <table>
-                        <tr>
-                          <th style="padding-right: 8rem;">Subject</th>
-                          <th>Grade</th>
-                        </tr>
-                        <tr>
-                          <td>Mathematics</td>
-                          <td>A</td>
-                        </tr>
-                        <tr>
-                          <td>Physics</td>
-                          <td>A</td>
-                        </tr>
-                        <tr>
-                          <td>Chemistry</td>
-                          <td>A</td>
-                        </tr>
-                      </table>
-                    </div>
+                    <div id="high-school"></div>
                   </li>
                   <li>
-                    <div class="columns">
+                    <div class="columns" id="university-toggle">
                       <div class="column is-size-4 ">
                         <a href="https://www.pw.edu.pl/engpw" class="has-text-black-bis">Politechnika Warszawska</a>
                       </div>
@@ -156,11 +65,7 @@
                         <a class="has-text-grey-light">10/2021 -> Present</a>
                       </div>
                     </div>
-                    <div class="columns">
-                      <div class="column px-5">
-                        BSc. Computer Science(Computer Systems and Networks)
-                      </div>
-                    </div>
+                    <div id="university"></div>
                   </li>
                 </ul>
               </div>
@@ -173,7 +78,7 @@
               <div class="column">
                 <ul>
                   <li>
-                    <div class="columns">
+                    <div class="columns" id="monterail-toggle">
                       <div class="column is-size-4 ">
                         <a href="https://www.monterail.com/" class="has-text-black-bis">Monterail</a>
                       </div>
@@ -181,11 +86,7 @@
                         <a class="has-text-grey-light">04/08/2021 -> Present</a>
                       </div>
                     </div>
-                    <div class="columns">
-                      <div class="column px-5">
-                        For the first 2 months i was attending the RubyCamp learning the monte way of development, I am currently working as a junior Ruby on Rails developer in the company
-                      </div>
-                    </div>
+                    <div id="monterail"></div>
                   </li>
                 </ul>
               </div>
@@ -198,32 +99,13 @@
               <div class="column">
                 <ul>
                   <li>
-                    <div class="columns">
+                    <div class="columns" id="musicapp-toggle">
                       <div class="column is-size-4 ">
                         <a href="https://songlink.wtf" class="has-text-black-bis">MusicApp</a>
                       </div>
                     </div>
-                    <div class="columns">
-                      <div class="column px-5">
-                        This app uses the youtube API to get search results of youtube videos,<br/>
-                        It then gives the user the opportunity to watch the youtube video in an iframe and download the video 
-                        which uses background workers to download asynchronously and clean the title as best as it possibly can 
-                        it scrapes wikipedia to find artists and their respective genres, it then allows the user to confirm the artists
-                        and title as it isn't a perfect system, if the user is logged in it is added to the users tracks
-                        there are future improvements i'd like to work on listed in the <a href="https://github.com/h4ppyr0gu3/musicApp"
-                        class="has-text-black-bis">
-                      github repository</a><br/><br/>
-                      this app uses the following technologies
-                      <ul className="bullet-points pl-5">
-                        <li>Ruby on Rails - Backend</li>
-                        <li>Javascript, CSS, SASS, HTML, Slim, React - Frontend</li>
-                        <li>Git and Github - Version control</li>
-                        <li>SQL, namely PostgreSQL - Database</li>
-                        <li>AJAX - API communication with React frontend and youtube API</li>
-                        <li>Passenger and NGINX on a Linode server - Deployment</li>
-                      </ul> 
-                    </div>
-                  </div>
+                    <div id="musicapp"></div>
+                    
                 </li>
               </ul>
             </div>
@@ -237,7 +119,7 @@
             <div class="column">
               <ul>
                 <li>English(native)</li>
-                <li>Currently learning Polish</li>
+                <!-- <li>Currently learning Polish</li> -->
               </ul>
             </div>
           </div>
@@ -254,20 +136,10 @@
                   <ul>
                     <div style='padding-left: 1rem;'>
                       <li>
-                        <strong>Backend</strong>
+                        <strong id="backend-toggle">Backend</strong>
                       </li>
-                      <div style='padding-left: 1rem;'>
-                        <li>
-                          <a href="https://www.ruby-lang.org/en/" class="has-text-black-bis">Ruby</a>
-                        </li>
-                        <li>
-                          <a href="https://rubyonrails.org/" class="has-text-black-bis">Ruby on Rails</a>
-                        </li>
-                        <li>
-                          <a href="https://en.wikipedia.org/wiki/SQL" class="has-text-black-bis">SQL</a>/<a 
-                          href="https://www.postgresql.org/" class="has-text-black-bis">PostgreSQL</a>
-                        </li>
-                      </div>
+                      <div id="backend"></div>
+                      
                     </div>
                   </ul>
                 </li>
@@ -275,25 +147,11 @@
                   <ul>
                     <div style='padding-left: 1rem;'>
                       <li>
-                        <strong>Frontend</strong>
+                        <strong id="frontend-toggle">Frontend</strong>
                       </li>
-                      <div style='padding-left: 1rem;'>
-                        <li>
-                          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="has-text-black-bis">HTML</a>
-                        </li>
-                        <li>
-                          <a href="https://en.wikipedia.org/wiki/CSS" class="has-text-black-bis">CSS</a>
-                        </li>
-                        <li>
-                          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="has-text-black-bis">JavaScript</a>
-                        </li>
-                        <li>
-                          <a href="https://reactjs.org/" class="has-text-black-bis">React</a>
-                        </li>
-                        <li>
-                          <a href="https://vuejs.org//" class="has-text-black-bis">Vue</a>
-                        </li>
-                      </div>
+                      <div id="frontend"></div>
+
+                      
                     </div>
                   </ul>
                 </li>
@@ -362,5 +220,6 @@
     </div>
   </footer>
 </div>
+<script src="./portfolio.js"></script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+#high-school-toggle:hover, 
+#university-toggle:hover,
+#monterail-toggle:hover,
+#musicapp-toggle:hover {
+	cursor: pointer;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #333;
+	border-radius: 1rem;
+}
+
+#frontend-toggle:hover,
+#backend-toggle:hover,
+#other-toggle:hover {
+	cursor: pointer;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #333;
+	border-radius: 0.5rem;
+}
+
