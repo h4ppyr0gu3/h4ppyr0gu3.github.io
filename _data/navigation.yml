@@ -1,5 +1,9 @@
-- name: Home
-  link: /
-- name: About
-  link: /about
+main:
+  - title: "Blogs"
+    url: /blog
+  - title: "About Me"
+    url: /about
+  - title: "Potfolio"
+    url: /portfolio/
+
 

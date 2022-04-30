@@ -18,19 +18,100 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: Personal Blog
+email: rogersdpdr@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
-github_username:  jekyll
-
+github_username:  h4ppyr0gu3
+include: ["_pages"]
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# minimal mistakes config
+name: David Rogers
+description: >- # this means to ignore newlines until "baseurl:"
+  This is my personal blog where i write about all the 
+  interesting things i am learning at the moment and to 
+  keep a record for personal reflection and to help teach other people
+repository: "username/repo-name"
+show_date: true
+date_format: "%Y-%m-%d"
+words_per_minute: 200
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      show_date: true
+      read_time: true
+      comments: true
+      related: true
+      share: true
+      author_profile: true
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "h4ppyr0gu3"
+search: true
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
+
+
+
+twitter: 
+  username: h4ppyr0gu3
+author:
+  name     : "David Rogers"
+  avatar   : "/assets/images/bio-photo.jpg"
+  bio      : "Web Developer and Linux Enthusiast"
+  location : "Warsaw, Poland | Zimbabwe"
+  links:
+    # - label: "Made Mistakes"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://mademistakes.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/h4ppyr0gu3"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/h4ppyr0gu3"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/rogers_dp"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://instagram.com/rogers_dp"
+
+footer: 
+  links:
+
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/mmistakes"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/mmistakes"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/mmistakes"
+
 plugins:
   - jekyll-feed
 
