@@ -26,7 +26,6 @@ twitter_username: jekyllrb
 github_username:  h4ppyr0gu3
 include: ["_pages"]
 # Build settings
-theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # minimal mistakes config
