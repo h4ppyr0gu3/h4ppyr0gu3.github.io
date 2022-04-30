@@ -58,13 +58,15 @@ comments:
 search: true
 
 collections:
-  portfolio:
+  posts:
     output: true
     permalink: /:collection/:path/
   projects:
     output: true
     permalink: /:collection/:path/
-
+  recipes:
+    output: true
+    permalink: /:collection/:path/
 
 defaults:
   # _portfolio
