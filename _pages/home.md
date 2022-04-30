@@ -15,9 +15,9 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Blogs"
   - image_path: /assets/images/nvim_400x200.jpg
-    title: "Interesting Projects"
+    title: "Upcoming Projects"
     excerpt: "Projects I am working on and interesting upcoming projects I am invested in"
-    url: "/projects/"
+    url: "/upcoming/"
     btn_class: "btn--primary"
     btn_label: "Projects"      
   - image_path: /assets/images/profile_400x200.jpg

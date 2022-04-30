@@ -64,6 +64,9 @@ collections:
   projects:
     output: true
     permalink: /:collection/:path/
+  upcoming:
+    output: true
+    permalink: /:collection/:path/
   recipes:
     output: true
     permalink: /:collection/:path/
