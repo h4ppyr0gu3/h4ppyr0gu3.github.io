@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Personal Blog
+title: h4ppyr0gu3
 email: rogersdpdr@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -61,6 +61,10 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
 
 defaults:
   # _portfolio
@@ -78,7 +82,7 @@ twitter:
   username: h4ppyr0gu3
 author:
   name     : "David Rogers"
-  avatar   : "/assets/images/bio-photo.jpg"
+  avatar   : "/assets/images/profile.jpg"
   bio      : "Web Developer and Linux Enthusiast"
   location : "Warsaw, Poland | Zimbabwe"
   links:
@@ -116,22 +120,3 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-include-cache
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
