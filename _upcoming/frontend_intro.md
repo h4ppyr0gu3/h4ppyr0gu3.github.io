@@ -372,4 +372,38 @@ submit.addEventListener('click', () => {
 
 The `event.preventDefault()` function stops the button from redirecting the page and allows us to manipulate the whole page through javascript by itself.
 The `input.value` is the value attribute of the input element which is where the text which we type is stored, try explicitly setting the value attribute in the html itself and notice that it basically gives us a default value.
+Now that we have the value we put entered we would like to generate a list item with that value.
+We can use an elements `innerHTML` value to push HTML onto the page, but first we need to remove the old list that was explicitly generated but copy a single `<li>` element over to the js file because that is our template which we will use to generate other items.
+Also add the `id` attribute to the `<ul>` tag so that we can manipulate that element with js, in my case I set the id attribute to list.
+Whilst we are grabbing all the html elements we will add another so we can get the list element as well:
+```js
+var list = document.getElementById("list");
+```
+now we can define a function to manipulate this element:
+```js
+
+function addTodo(text) {
+  list.innerHTML +=
+  `<li class="list-item"> 
+    <div class="parent-container"> 
+      <div class="text">
+        <div class="item">
+          ${text}
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="remove">Remove</button>
+      </div>
+    </div>
+  </li>`
+}
+```
+We are using the += operator which adds to the existing innerHTML instead of overwriting it.
+We can insert variables anywhere in our JS code by using the `${<variable>}` but apart from that you should notice that that list item HTML is exactly what we had before but the only difference is the JS text variable.
+Now instead of just logging the value of the input to the console in the browser we can add an element by replacing the `console.log` with `addTodo` which will pass the text value to the function and add to the HTML.
+Now we should be able to add Items to do.
+
+Theres a button to remove the item but that JS didn't seem to fix the issue?
+
+
 
